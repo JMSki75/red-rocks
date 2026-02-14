@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>The Song of the Red Rocks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -28,6 +29,20 @@
         display: block; /* Removes any tiny bottom gaps */
     }
     h1 { margin-bottom: 20px; color: #ff4500; font-size: 1.5rem; }
+/* Existing styles above... */
+
+    @media (max-width: 600px) {
+        body {
+            font-size: 20px; /* Bumping to 20px for extra clarity */
+            padding: 10px;   /* Keeping margins tight to give text more room */
+        }
+        h1 {
+            font-size: 28px; 
+        }
+        img {
+            margin-bottom: 30px; /* Slightly tighter spacing between spreads */
+        }
+    }
 </style>
 </head>
 <body>
