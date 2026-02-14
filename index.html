@@ -31,16 +31,21 @@
     h1 { margin-bottom: 20px; color: #ff4500; font-size: 1.5rem; }
 /* Existing styles above... */
 
-    @media (max-width: 600px) {
+   @media (max-width: 600px) {
         body {
-            font-size: 20px; /* Bumping to 20px for extra clarity */
-            padding: 10px;   /* Keeping margins tight to give text more room */
+            padding: 0px;    /* Remove all side spacing */
+            margin: 0px;     /* Ensure no gaps at the edges */
+            background-color: #000; /* Black background makes colors pop */
         }
-        h1 {
-            font-size: 28px; 
+        .book-container {
+            width: 100%;     /* Use the full width of the phone */
+            max-width: none; /* Let it stretch edge-to-edge */
         }
         img {
-            margin-bottom: 30px; /* Slightly tighter spacing between spreads */
+            width: 100vw;    /* Make the image exactly the width of the screen */
+            height: auto;    /* Keep it from getting squished */
+            margin-bottom: 10px; /* Tighter gap between pages */
+            display: block;  /* Remove any tiny "ghost" gaps */
         }
     }
 </style>
